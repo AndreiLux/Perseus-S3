@@ -5156,7 +5156,7 @@ int net_os_rxfilter_add_remove(struct net_device *dev, int add_remove, int num)
 			filterp = "101 0 0 0 0xFFFFFFFFFFFF 0xFFFFFFFFFFFF";
 			break;
 		case DHD_MULTICAST4_FILTER_NUM:
-			filterp = "102 0 0 0 0xFFFFFF 0x01005E";
+			filterp = "102 0 0 0 0xFFFFFFFFFFFF 0x01005E0000FB";
 			break;
 		case DHD_MULTICAST6_FILTER_NUM:
 #if defined(BLOCK_IPV6_PACKET)
